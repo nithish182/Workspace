@@ -1,0 +1,539 @@
+/* The below code is for navigation menu */
+
+@media (min-width:1280px) {
+  .join {
+    border-radius: 36px;
+    width: 93.25px;
+    text-align: center;
+    margin-left: 16px;
+    border-width: 2px;
+    border-style: solid;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    margin-top: 6px;
+  }
+}
+
+@media (min-width:1280px) {
+  .join:hover {
+    background-color: #27345E;
+    border-color: #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .navbar-light .navbar-nav .join:hover {
+    color: white;
+  }
+}
+
+*, *:before, *:after {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+@media (min-width:1280px) {
+  .home:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -37px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .home:hover:after {
+    width: 32px;
+  }
+}
+
+@media (min-width:1280px) {
+  .product:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -52px;
+    bottom: 10px; 
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .product:hover:after {
+    width: 42px;
+  }
+}
+
+@media (min-width:1280px) {
+  .contact:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -45px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .contact:hover:after {
+    width: 37px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .home:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -38px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;    
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .product:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -55px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .contact:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -48px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .home {
+    margin-left: 470px;
+  }
+}
+
+@media (min-width:1280px) {
+  .img-link {
+    width: 260px;
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .product {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    margin-left: 10px;
+  }
+}
+
+.img-link {
+  width: 260px;
+  margin-left: -20px;
+}
+
+@media (min-width:1366px) {
+  .home {
+    margin-left: 510px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1366px) {
+  .product {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1366px) {
+  .contact {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1366px) {
+  .join {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1536px) {
+  .home {
+    margin-left: 626px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1536px) {
+  .product {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1536px) {
+  .contact {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1536px) {
+  .join {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1536px) {
+  .img-link {
+    width: 265px;
+  }
+}
+
+/* The above code is for navigation menu */
+
+
+
+
+
+@media (min-width:1280px) {
+  .assistyou-p {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 47px;
+    font-weight: bold;
+    transform: scale(1);
+    color: #27345E;
+    width: 540px;
+    text-shadow: 0px -1px 2px #212121;
+  }
+}
+
+@media (min-width:1280px) {
+  .contact-man {
+    width: 430px;
+    margin-top: -100px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width:1280px) {
+  .contact-coin {
+    margin-top: -744px;
+    width: 296px;
+    margin-left: 895px;
+  }
+}
+
+@media (min-width:1280px) {
+  .assistcaptiopn-p {
+    font-size: 19px;
+    width: 555px;
+    margin-top: -13px;
+    margin-left: 39px;
+    color: #E0C570;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width:1280px) {
+  .contactxt {
+    font-family: Poppins, sans-serif;
+    color: #27345E;
+    margin-left: 127px;
+  }
+}
+
+@media (min-width:1280px) {
+  .name-input {
+    margin-top: 32px;
+    margin-left: 45px;
+    width: 400.8px;
+    font-size: 17px;
+    padding-left: 12px;
+    background: #F4F8E7;
+    border: 2px solid #000000;
+    border-bottom-style: solid;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width:1280px) {
+  .msgbox {
+    margin-top: 28px;
+    width: 400.8px;
+    margin-left: 45px;
+    padding-top: 37px;
+    border-radius: 0px;
+    border: 2px solid #000000;
+    background: #F4F8E7;
+    font-size: 17px;
+  }
+}
+
+@media (min-width:1280px) {
+  .details1 {
+    color: #27345E;
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+    width: 464px;
+    margin-top: 47px;
+  }
+}
+
+@media (min-width:1280px) {
+  .details2 {
+    width: 498px;
+    color: #27345E;
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width:1280px) {
+  .sumbitbtn {
+    margin-left: 45px;
+    width: 400.8px;
+    margin-top: 13px;
+    background: #27345E;
+    border-radius: 0px;
+    border: 2px solid #27345E;
+  }
+}
+
+
+@media (min-width:1366px) {
+  .contact-coin {
+    width: 326px;
+    margin-left: 908px;
+  }
+}
+
+@media (min-width:1366px) {
+  .contact-man {
+    width: 435px;
+  }
+}
+
+@media (min-width:1366px) {
+  .assistyou-p {
+    font-size: 43px;
+    width: 590px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width:1366px) {
+  .assistcaptiopn-p {
+    font-size: 20px;
+    width: 534px;
+  }
+}
+
+@media (min-width:1536px) {
+  .contact-coin {
+    margin-left: 1007px;
+    margin-top: -811px;
+    width: 400px;
+  }
+}
+
+@media (min-width:1536px) {
+  .contact-man {
+    width: 495px;
+    margin-left: 63px;
+  }
+}
+
+@media (min-width:1536px) {
+  .assistyou-p {
+    font-size: 46px;
+    margin-left: 15px;
+    width: 622px;
+    margin-top: 71px;
+  }
+}
+
+@media (min-width:1536px) {
+  .assistcaptiopn-p {
+    margin-left: 25px;
+    font-size: 22px;
+    width: 574px;
+  }
+}
+
+@media (min-width:1536px) {
+  .details1 {
+    font-size: 26px;
+    width: 524px;
+  }
+}
+
+@media (min-width:1536px) {
+  .details2 {
+    font-size: 26px;
+    width: 536px;
+  }
+}
+
+@media (min-width:1536px) {
+  .name-input {
+    margin-top: 27px;
+    width: 440.8px;
+  }
+}
+
+@media (min-width:1536px) {
+  .msgbox {
+    margin-top: 28px;
+    width: 440.8px;
+  }
+}
+
+@media (min-width:1536px) {
+  .sumbitbtn {
+    width: 440.8px;
+  }
+}
+
+@media (min-width:1536px) {
+  .contactxt {
+    margin-left: 143px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .sumbitbtn {
+    margin-top: 22px;
+  }
+}
+
+/* The below code is for footer */
+
+@media (min-width:1280px) {
+  .footer {
+    height: 317px;
+    margin-top: 120px;
+    background: #2385C4;
+  }
+}
+
+@media (min-width:1280px) {
+  .application-footer {
+    font-family: Poppins, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    margin-left: 85px;
+  }
+}
+
+@media (min-width:1280px) {
+  .about-footer {
+    color: rgb(0,0,0);
+    font-size: 20px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width:1280px) {
+  .img-footer {
+    width: 260px;
+  }
+}
+
+@media (min-width:1280px) {
+  .subapplications {
+    font-family: Poppins, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 85px;
+    margin-top: 11px;
+    width: 127px;
+  }
+}
+
+@media (min-width:1280px) {
+  .subaboutus {
+    font-family: Poppins, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 147px;
+  }
+}
+
+@media (min-width:1280px) {
+  .subapplications:hover {
+    color: #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .subaboutus:hover {
+    color: #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .studentjain-p {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 23px;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width:1280px) {
+  .footer-line {
+    margin-top: 30px;
+    margin-left: 35px;
+    color: rgb(255,255,255);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+  }
+}
+

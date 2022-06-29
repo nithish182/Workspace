@@ -1,0 +1,15 @@
+colors:
+
+#F4F8E7 - light yellow
+#2385C4 - blue
+#27345E - button blue
+#E0C570 - letter yellow
+
+
+fonts:
+
+poppins
+poppins medium
+poppins thin
+
+

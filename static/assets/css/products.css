@@ -1,0 +1,645 @@
+/* The below code is for navigation menu */
+
+@media (min-width:1280px) {
+  .join {
+    border-radius: 36px;
+    width: 93.25px;
+    text-align: center;
+    margin-left: 16px;
+    border-width: 2px;
+    border-style: solid;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    margin-top: 6px;
+  }
+}
+
+@media (min-width:1280px) {
+  .join:hover {
+    background-color: #27345E;
+    border-color: #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .navbar-light .navbar-nav .join:hover {
+    color: white;
+  }
+}
+
+*, *:before, *:after {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+@media (min-width:1280px) {
+  .home:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -37px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .home:hover:after {
+    width: 32px;
+  }
+}
+
+@media (min-width:1280px) {
+  .product:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -52px;
+    bottom: 10px; 
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .product:hover:after {
+    width: 42px;
+  }
+}
+
+@media (min-width:1280px) {
+  .contact:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -45px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .contact:hover:after {
+    width: 37px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .home:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -38px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;    
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .product:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -55px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .contact:after {
+    content: "";
+    position: absolute;
+    background-color: #27345E;
+    height: 3px;
+    width: 0;
+    margin-left: -48px;
+    bottom: 10px;
+    transition: 0.3s;
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .home {
+    margin-left: 470px;
+  }
+}
+
+@media (min-width:1280px) {
+  .img-link {
+    width: 260px;
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .product {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    margin-left: 10px;
+  }
+}
+
+.img-link {
+  width: 260px;
+  margin-left: -20px;
+}
+
+@media (min-width:1366px) {
+  .home {
+    margin-left: 510px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1366px) {
+  .product {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1366px) {
+  .contact {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1366px) {
+  .join {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1536px) {
+  .home {
+    margin-left: 626px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1536px) {
+  .product {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1536px) {
+  .contact {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1536px) {
+  .join {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1536px) {
+  .img-link {
+    width: 265px;
+  }
+}
+/* The above code is for navigation menu */
+
+
+
+
+
+
+
+@media (min-width:1280px) {
+  .para1-product {
+    font-family: Poppins, sans-serif;
+    color: #27345E;
+    font-size: 48px;
+    width: 480px;
+    font-weight: 600;
+    text-shadow: 0px 0px 2px;
+    line-height: 1.2;
+    margin-top: 120px;
+    margin-left: 85px;
+  }
+}
+
+@media (min-width:1280px) {
+  .para3-product {
+    width: 400px;
+    font-family: Poppins, sans-serif;
+    color: #E0C570;
+    margin-left: 89px;
+    margin-top: -6px;
+  }
+}
+
+@media (min-width:1280px) {
+  .productimg {
+    width: 470px;
+    margin-left: 33px;
+  }
+}
+
+@media (min-width:1280px) {
+  .coinimg-product {
+    margin-left: 835px;
+    margin-top: -796px;
+    width: 356px;
+  }
+}
+
+@media (min-width:1280px) {
+  .trynowbtn {
+    margin-left: 92px;
+    width: 103.5875px;
+    border-radius: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    background: #27345E;
+    border: 2px solid #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .inclapp-product {
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width:1280px) {
+  .jdocs-product {
+    width: 100px;
+    margin-left: 70px;
+  }
+}
+
+@media (min-width:1280px) {
+  .jdoc-product {
+    width: 80px;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width:1280px) {
+  .worksheet-txt {
+    font-family: Poppins, sans-serif;
+    font-size: 16.4px;
+    margin-left: 140px;
+    margin-top: -47px;
+  }
+}
+
+@media (min-width:1280px) {
+  .jcalender-product {
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 33px;
+  }
+}
+
+@media (min-width:1280px) {
+  .calender-txt {
+    font-size: 16.4px;
+    margin-left: 123px;
+    margin-top: -48px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width:1280px) {
+  .jnotes-product {
+    width: 80px;
+    margin-top: 10px;
+    margin-left: -9px;
+  }
+}
+
+@media (min-width:1280px) {
+  .notes-txt {
+    font-size: 16.4px;
+    margin-left: 73px;
+    margin-top: -49px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width:1280px) {
+  .jfiles-product {
+    width: 75px;
+    margin-top: 10px;
+    margin-left: -72px;
+  }
+}
+
+@media (min-width:1280px) {
+  .files-txt {
+    font-size: 16.4px;
+    margin-left: 18px;
+    margin-top: -46px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width:1280px) {
+  .work-txt {
+    font-family: Poppins, sans-serif;
+    margin-left: 430px;
+    margin-top: 27px;
+    font-size: 24px;
+    color: rgb(255,255,255);
+  }
+}
+
+@media (min-width:1280px) {
+  .para2-product {
+    margin-left: 128px;
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+    width: 950pxpx;
+    margin-top: 11px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+  }
+}
+
+@media (min-width:1280px) {
+  .office-head1 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    margin-left: 88px;
+    font-weight: bold;
+    line-height: 0.5;
+    color: #2385C4;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width:1280px) {
+  .office-head2 {
+    width: 328px;
+    margin-left: 87px;
+    font-family: Poppins, sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width:1280px) {
+  .screenshot1 {
+    width: 470px;
+    margin-top: 56px;
+    margin-left: -18px;
+  }
+}
+
+@media (min-width:1280px) {
+  .office-para {
+    width: 356px;
+    margin-left: 87px;
+    margin-top: 24px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width:1280px) {
+  .screenshot2 {
+    width: 505px;
+    margin-left: 45px;
+  }
+}
+
+@media (min-width:1280px) {
+  .storage {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    color: #2385C4;
+    font-weight: bold;
+    margin-left: 45px;
+    line-height: 0.5;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width:1280px) {
+  .storage2-head {
+    width: 340px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+    margin-left: 41px;
+  }
+}
+
+@media (min-width:1280px) {
+  .storage-para {
+    width: 359px;
+    margin-left: 44px;
+    margin-top: 14px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (min-width: 1366px) {
+  .para3-product {
+    margin-left: 60px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width:1366px) {
+  .coinimg-product {
+    margin-left: 853px;
+    width: 380px;
+    margin-top: -782px;
+  }
+}
+
+@media (min-width:1366px) {
+  .productimg {
+    width: 477px;
+  }
+}
+
+@media (min-width:1366px) {
+  .para1-product {
+    font-size: 53px;
+    margin-left: 57px;
+    width: 500px;
+  }
+}
+
+@media (min-width:1366px) {
+  .trynowbtn {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width:1536px) {
+  .productimg {
+    margin-left: 64px;
+    width: 470px;
+  }
+}
+
+@media (min-width:1536px) {
+  .coinimg-product {
+    width: 420px;
+    margin-top: -736px;
+    margin-left: 985px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .para3-product {
+    margin-left: 84px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1536px) {
+  .trynowbtn {
+    margin-left: 87px;
+  }
+}
+
+@media (min-width:1536px) {
+  .para1-product {
+    margin-left: 75px;
+  }
+}
+
+@media (min-width:1536px) {
+  .work-txt {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+@media (min-width:1536px) {
+  .para2-product {
+    margin-left: 200px;
+  }
+}
+
+/* The below code is for footer */
+
+@media (min-width:1280px) {
+  .footer {
+    height: 317px;
+    margin-top: 120px;
+    background: #2385C4;
+  }
+}
+
+@media (min-width:1280px) {
+  .application-footer {
+    font-family: Poppins, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    margin-left: 85px;
+  }
+}
+
+@media (min-width:1280px) {
+  .about-footer {
+    color: rgb(0,0,0);
+    font-size: 20px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width:1280px) {
+  .img-footer {
+    width: 260px;
+  }
+}
+
+@media (min-width:1280px) {
+  .subapplications {
+    font-family: Poppins, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 85px;
+    margin-top: 11px;
+    width: 127px;
+  }
+}
+
+@media (min-width:1280px) {
+  .subaboutus {
+    font-family: Poppins, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 147px;
+  }
+}
+
+@media (min-width:1280px) {
+  .subapplications:hover {
+    color: #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .subaboutus:hover {
+    color: #27345E;
+  }
+}
+
+@media (min-width:1280px) {
+  .studentjain-p {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 23px;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width:1280px) {
+  .footer-line {
+    margin-top: 30px;
+    margin-left: 35px;
+    color: rgb(255,255,255);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+  }
+}
+
+/* The above code is for footer */
+
