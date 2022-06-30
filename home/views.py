@@ -17,7 +17,7 @@ def contact(request):
         msgbox=request.POST['msgbox']
 
         send_mail(
-            'Support Form - '+ name,
+            email + " - " + name,
             msgbox,
             email,
             ['jainworkspace03@gmail.com'],
