@@ -23,7 +23,7 @@
                                 <li class="nav-item"><a class="nav-link active home" href="{% url 'home' %}">Home</a></li>
                                 <li class="nav-item"><a class="nav-link product" href="{% url 'products' %}">Products</a></li>
                                 <li class="nav-item"><a class="nav-link contact" href="{% url 'contact' %}">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link active join" href="#">Join us</a></li>
+                                <li class="nav-item"><a class="nav-link active join" href="{% url 'register' %}">Join us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
         <div class="row" style="margin-top: -42px;">
             <div class="col">
                 <p class="para1-product">Do your best work, all in one place.</p>
-                <p class="para3-product">See how Jain workspace can take your start up's teamwork to next level.</p><button class="btn btn-primary trynowbtn" type="button">Try Now</button>
+                <p class="para3-product">See how Jain workspace can take your start up's teamwork to next level.</p><button class="btn btn-primary trynowbtn" type="button"><a href="{% url 'register' %}" style="text-decoration:none; color:white">Try Now</a></button>
             </div>
             <div class="col"><img class="productimg" src="{% static 'assets/img/productspage_mens.png' %}"></div>
             <div class="col"><img class="coinimg-product" src="{% static 'assets/img/homepage_coin.png' %}"></div>

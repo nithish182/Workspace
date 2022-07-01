@@ -1,16 +1,3 @@
-.name {
-  margin-left: 166px;
-  margin-top: 11px;
-  border-style: groove;
-  font-family: Poppins, sans-serif;
-  font-size: 18px;
-  border-radius: 0px;
-  padding-left: 13px;
-  width: 466.4px;
-  height: 35.5px;
-  background: #F4F8E7;
-}
-
 @media only screen and (min-width: 1280px) {
   .logo {
     margin-top: 3px;
@@ -31,7 +18,7 @@
 
 @media only screen and (min-width: 1280px) {
   .login {
-    font-size: 21px;
+    font-size: 18px;
     width: 287px;
     margin-left: 462px;
     margin-top: -48px;
@@ -40,15 +27,10 @@
 
 @media only screen and (min-width: 1280px) {
   .already {
-    font-size: 21px;
+    font-size: 18px;
     width: 287px;
     margin-left: 177px;
     margin-top: 6px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .btn {
   }
 }
 
@@ -96,5 +78,18 @@
   .rocket {
     width: 262px;
   }
+}
+
+.name {
+  margin-left: 166px;
+  margin-top: 18px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  border-radius: 0px;
+  padding-left: 13px;
+  width: 466.4px;
+  height: 35.5px;
+  background: #F4F8E7;
+  border: 2.4px solid rgb(39,52,94);
 }
 

@@ -5,47 +5,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Register</title>
+    <title>workspace-register</title>
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/Poppins.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/register.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled.css' %}">
 </head>
 
 <body style="background: #F4F8E7;margin-top: 50px;">
     <div class="container" style="width: 796px;">
         <div class="row">
-            <div class="col" style="margin-top: 38px;"><img class="logo" src="assets/img/jws-t.png"></div>
+            <div class="col" style="margin-top: 38px;"><img class="logo" src="{% static 'assets/img/jws-t.png' %}"></div>
         </div>
         <div class="row">
             <div class="col" style="margin-top: 10px;">
                 <p>Start your account today.</p>
             </div>
         </div>
-	
-	<form method="POST">
-        	<div class="row">
-            		<div class="col" style="margin-top: 10px;"><input type="text" class="name" placeholder="Full name" name="fullname"></div>
-        	</div>
-        	<div class="row">
-            		<div class="col" style="margin-top: 10px;"><input type="text" class="name" placeholder="Username" name="username"></div>
-        	</div>
-        	<div class="row">
-            		<div class="col" style="margin-top: 10px;"><input type="text" class="name" placeholder="Password" style="width: 227.4px;" name="pass"><input type="text" class="name" placeholder="Confirm Password" style="width: 227.4px;margin-left: 11px;font-size: 18px;" name="confirmpass"></div>
-        	</div>
-        	<div class="row">
-            		<div class="col" style="margin-top: 10px;"><button class="btn btn-primary" type="button" style="border-color: rgb(39,52,94);">Create account</button></div>
-        	</div>
-	</form>
-	
         <div class="row">
-
-		<p style="width: 400px" class="already">Already have an account? <a href="#">Login</a></p>
-           
+            <div class="col">
+                <form method="post">
+                    {% csrf_token %}
+                    <input class="form-control name" type="text" placeholder="Full name" name="fullname" style="border-width: 2px; border-style:solid; border-color: black;">
+                    <input class="form-control name" type="text" placeholder="Username" name="username" style="border-width: 2px; border-style:solid; border-color: black;">
+                    <input class="form-control name" type="text" placeholder="Password" name="pass" style="border-width: 2px; border-style:solid; border-color: black;">
+                    <input class="form-control name" type="text" placeholder="Confirm password" name="cpass" style="border-width: 2px; border-style:solid; border-color: black;">
+                    <button class="btn btn-primary" type="button" style="margin-top: 15px; border-color: #27345E;">Create account</button>
+                    <p class="already">Already have an account?</p>
+                    <p class="login"><a href="{% url 'login' %}">Login</a></p>
+                </form>
             </div>
         </div>
-    </div><img class="rocket" src="assets/img/homepage_paper.png">
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </div><img class="rocket" src="{% static 'assets/img/homepage_paper.png' %}">
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
 </body>
 
 </html>
