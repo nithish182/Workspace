@@ -11,5 +11,3 @@ fonts:
 poppins
 poppins medium
 poppins thin
-
-Hi this is zane
