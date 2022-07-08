@@ -10,4 +10,4 @@ fonts:
 
 poppins
 poppins medium
-poppins heavy
+poppins thin
