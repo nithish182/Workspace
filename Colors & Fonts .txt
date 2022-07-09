@@ -10,5 +10,9 @@ fonts:
 
 poppins
 poppins medium
+<<<<<<< HEAD
 poppins thin
 my name is pannikutty
+=======
+poppins thin
+>>>>>>> d0941acf50de290673b5175607c9a9d7f4251aad

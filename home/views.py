@@ -20,7 +20,7 @@ def contact(request):
             email + " - " + name,
             msgbox,
             email,
-            ['jainworkspace03@gmail.com'],
+            ['rishiganapathi07@gmail.com'],
             fail_silently=False
         )    
 
