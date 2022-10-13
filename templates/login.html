@@ -25,10 +25,12 @@
         <div class="row">
             <div class="col">
 
-                <form method="POST">
+                <form action="login" method="POST">
+                    {% csrf_token %}
+
 			        <input class="form-control name-input" type="text" placeholder="Username" name=username>
-			        <input class="form-control password-input" type="text" placeholder="Password" name=password>
-			        <button class="btn btn-primary loginbtn" type="button" style="border-color: #27345E;">Login</button>
+			        <input class="form-control password-input" type="password" placeholder="Password" name=password>
+			        <button class="btn btn-primary loginbtn" type="submit" style="border-color: #27345E;">Login</button>
 		        </form>
                 <p style="margin-top: 15px;margin-left: 136px;font-size: 17px;">Dont have an account? <a href="{% url 'register' %}">Sign up</a></p>
         
@@ -36,6 +38,13 @@
             <div class="col"><img class="logingirl" src="{% static 'assets/img/loginpage_girl.png' %}"></div>
         </div>
     </div>
+
+    <div>
+        {% for message in messages %}
+        <h6 style="color: red; margin-left: 175px;">{{message}}</h6>
+        {% endfor %}
+    </div>
+    
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
 </body>
 

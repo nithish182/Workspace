@@ -25,18 +25,27 @@
             <div class="col">
                 <form method="post">
                     {% csrf_token %}
+
                     <input class="form-control name" type="text" placeholder="Full name" name="fullname" style="border-width: 2px; border-style:solid; border-color: black;">
                     <input class="form-control name" type="text" placeholder="Username" name="username" style="border-width: 2px; border-style:solid; border-color: black;">
-                    <input class="form-control name" type="text" placeholder="Password" name="pass" style="border-width: 2px; border-style:solid; border-color: black;">
-                    <input class="form-control name" type="text" placeholder="Confirm password" name="cpass" style="border-width: 2px; border-style:solid; border-color: black;">
-                    <button class="btn btn-primary" type="button" style="margin-top: 15px; border-color: #27345E;">Create account</button>
+                    <input class="form-control name" type="password" placeholder="Password" name="password1" style="border-width: 2px; border-style:solid; border-color: black;">
+                    <input class="form-control name" type="password" placeholder="Confirm password" name="password2" style="border-width: 2px; border-style:solid; border-color: black;">
+                    <button class="btn btn-primary" type="submit" style="margin-top: 15px; border-color: #27345E;">Create account</button>
                     <p class="already">Already have an account?</p>
                     <p class="login" style="margin-left: 430px; margin-top: -43px;"><a href="{% url 'login' %}">Login</a></p>
                 </form>
             </div>
         </div>
+
+        <div>
+            {% for message in messages %}
+            <h6 style="color: red; margin-left: 175px;">{{message}}</h6>
+            {% endfor %}
+        </div>
+        
     </div><img class="rocket" src="{% static 'assets/img/homepage_paper.png' %}">
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script> 
+
 </body>
 
 </html>
