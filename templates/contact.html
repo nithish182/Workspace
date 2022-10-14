@@ -23,7 +23,14 @@
                                 <li class="nav-item"><a class="nav-link active home" href="{% url 'home' %}">Home</a></li>
                                 <li class="nav-item"><a class="nav-link product" href="{% url 'home' %}">Products</a></li>
                                 <li class="nav-item"><a class="nav-link contact" href="{% url 'home' %}">Contact</a></li>
+                                
+                                {% if user.is_authenticated %}
+                                <li style="margin-left: 16px; margin-top: 8px; width: 110px;">Hello, {{user.username}}</li>
+                                &nbsp;
+                                <li class="nav-item contact" style="margin-left: 2px; margin-top: 8px;"><a href="{% url 'logout' %}" style="text-decoration: none; color: black">Logout</a></li>
+                                {% else %}
                                 <li class="nav-item"><a class="nav-link active join" href="{% url 'register' %}">Join us</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                     </div>
