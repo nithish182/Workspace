@@ -66,7 +66,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     form_class = CreateViewForm # making the class use an existing form with pre-defined validation rules
     template_name = 'post_create.html'
-    success_url = '/'
+    success_url = '/jblogs/'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -86,7 +86,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
 
 class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
-    success_url = '/'
+    success_url = '/jblogs/'
     template_name = 'post_delete.html'
 
 
