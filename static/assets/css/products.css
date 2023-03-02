@@ -13,7 +13,7 @@
     margin-top: 6px;
   }
 }
-
+ 
 @media (min-width:1280px) {
   .join:hover {
     background-color: #27345E;
@@ -337,6 +337,10 @@
     margin-top: -48px;
     font-family: Poppins, sans-serif;
   }
+}
+
+.calender-txt:hover {
+  color: grey;
 }
 
 @media (min-width:1280px) {

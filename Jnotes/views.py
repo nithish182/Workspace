@@ -7,6 +7,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views import generic
 from .forms import CreateViewForm, UpdateViewForm
+from django.contrib.auth.decorators import login_required
 
 # enabling case-insensitive search in MySQL databases
 from django.db.models import Q, TextField
