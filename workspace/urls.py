@@ -21,5 +21,6 @@ urlpatterns = [
     path('',include('home.urls')),
     path('accounts/',include('accounts.urls')),
     path('jblogs/',include('Jnotes.urls')),
-    path('jevents/',include('Events.urls')),    
+    path('jevents/',include('Events.urls')),
+    path('compiler/',include('Complier.urls')),
 ]
