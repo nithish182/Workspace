@@ -53,7 +53,7 @@ class PostListView(LoginRequiredMixin, ListView):
          queryset = Post.objects.filter(Q(content__lower__contains=search_query)).filter(author_id=self.request.user.id).order_by('-date_posted')
          return queryset
 
- class PostDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
+class PostDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
      model = Post
 
      def test_func(self):
