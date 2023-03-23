@@ -73,7 +73,6 @@ class PostCreateView(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-
 # if users are allowed to update or delete anyone's posts, not only theirs, then leave this and the next class uncommented
 
 # class PostUpdateView(LoginRequiredMixin, UpdateView):
