@@ -15,7 +15,7 @@
       <!-- allowing only the author to update or delete his or her posts -->
       <!-- the same settings need to be enabled in the blog/views.py file -->
 
-      <!--{% if object.author == user %}
+      {% if object.author == user %}
         <div class="article-buttons">
           <a class="button secondary_button short_button" href="{% url 'post-update' object.id %}">Update</a>
           <a class="button alert_button short_button" href="{% url 'post-delete' object.id %}">Delete</a>
@@ -29,13 +29,14 @@
       {% endif %} -->
 
       <!-- allowing everyone to update or delete anyone's posts -->
-      <!-- the same settings need to be enabled in the blog/views.py file -->
+      <!-- the same settings need to be enabled in the blog/views.py file x
 
       <div class="article-buttons">
         <a class="button secondary_button short_button" href="{% url 'post-update' object.id %}">Update</a>
         <a class="button alert_button short_button" href="{% url 'post-delete' object.id %}">Delete</a>
       </div>
-
+             -->
+             
     </div>
   </article>
 </div>
