@@ -16,20 +16,20 @@ TextField.register_lookup(Lower, "lower")
 
 
 # if users are allowed to view anyone's posts, not only theirs, then leave this and the next class uncommented
-# class PostListView(LoginRequiredMixin, ListView):
-#  model = Post
-# template_name = 'home_jnotes.html'
-#    context_object_name = 'posts' # the name of a context variable with the queryset results
-#    ordering = ['-date_posted']
-  #  paginate_by = 20
+class PostListView(LoginRequiredMixin, ListView):
+  model = Post
+  template_name = 'home_jnotes.html'
+  context_object_name = 'posts' # the name of a context variable with the queryset results
+  ordering = ['-date_posted']
+  paginate_by = 20
 
     # modifying the function for returning posts
- #   def get_queryset(self):
+def get_queryset(self):
         # if there is a search query in the URL parameter, then use it to filter the results
- #       search_query = self.request.GET.get('search', '')
- #       # using Q for case-insensitive search in a MySQL database
- #       queryset = Post.objects.filter(Q(content__lower__contains=search_query)).order_by('-date_posted')
-#       return queryset
+       search_query = self.request.GET.get('search', '')
+       # using Q for case-insensitive search in a MySQL database
+       queryset = Post.objects.filter(Q(content__lower__contains=search_query)).order_by('-date_posted')
+       return queryset
 
 
 # class PostDetailView(LoginRequiredMixin, DetailView):
@@ -75,26 +75,26 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 # if users are allowed to update or delete anyone's posts, not only theirs, then leave this and the next class uncommented
 
-# class PostUpdateView(LoginRequiredMixin, UpdateView):
- #   model = Post
-#    template_name = 'post_update.html'
-  #  form_class = UpdateViewForm
+class PostUpdateView(LoginRequiredMixin, UpdateView):
+   model = Post
+   template_name = 'post_update.html'
+   form_class = UpdateViewForm
 
-  #  def form_valid(self, form):
-  #      form.instance.author = self.request.user
-  #      return super().form_valid(form)
+def form_valid(self, form):
+    form.instance.author = self.request.user
+    return super().form_valid(form)
 
 
-#class PostDeleteView(LoginRequiredMixin, DeleteView):
-#    model = Post
-#    success_url = '/jblogs/'
-#    template_name = 'post_delete.html'
+class PostDeleteView(LoginRequiredMixin, DeleteView):
+    model = Post
+    success_url = '/jblogs/'
+    template_name = 'post_delete.html'
 
 
 # if users are allowed to update or delete only their own posts, then leave this and the next class uncommented
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
      model = Post
-     template_name = 'blog/post_update.html'
+     template_name = 'Jnotes/post_update.html'
      form_class = UpdateViewForm
 
      def form_valid(self, form):
@@ -111,7 +111,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
      model = Post
      success_url = '/'
-     template_name = 'blog/post_delete.html'
+     template_name = 'Jnotes/post_delete.html'
 
      def test_func(self):
          post = self.get_object()
