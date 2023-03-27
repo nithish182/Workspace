@@ -34,7 +34,7 @@ def add_event(request):
     data = {}
     return JsonResponse(data)
 
-def update(request):
+"""def update(request):
     start = request.GET.get("start", None)
     end = request.GET.get("end", None)
     title = request.GET.get("title", None)
@@ -52,5 +52,5 @@ def remove(request):
     event = Events.objects.get(id=id)
     event.delete()
     data = {}
-    return JsonResponse(data)
+    return JsonResponse(data)"""
  
