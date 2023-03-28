@@ -11,8 +11,8 @@ class Post(models.Model):
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now) # recording the timestamp when a new entry is created
     author = models.ForeignKey(User, on_delete=models.CASCADE) # ForeignKey defines a "many-to-one relationship"
-    image = models.ImageField(default='',upload_to='images',blank=True,null=True)
-    audio = models.FileField(default='',upload_to='audio',blank=True,null=True)
+    image = models.ImageField(default='',upload_to='media/images',blank=True,null=True)
+    audio = models.FileField(default='',upload_to='media/audio',blank=True,null=True)
 
     def __str__(self):
         return self.title

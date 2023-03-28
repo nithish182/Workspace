@@ -24,11 +24,11 @@
       <article>
         <div>
           <div class="article-datetime">
-            <p>{{ post.date_posted|date:"F j, Y, H:i" }}</p>
+            <p>{{ post.date_posted|date:"F j, Y. " }}</p>
           </div>
           <div class="article-headline">
             <a class="article-title" href="{% url 'post-detail' post.id %}">
-              {% if post.title %}{{post.title}}{% else %}{{ post.date_posted|date:"F j, Y, H:i" }}{% endif %}
+              {% if post.title %}{{post.title}}{% else %}{{ post.date_posted|date:"F j, Y." }}{% endif %}
             </a>
           </div>
           <p class="article-content">{{ post.content }}</p>
